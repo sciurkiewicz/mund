@@ -1,12 +1,12 @@
-function toggle() {
-    function hideAll() {
-        const screens = [".screen1", ".screen2", ".screen3", ".screen4", ".screen5", ".screen6"];
-        screens.forEach(selector => {
-            const element = document.querySelector(selector);
-            if (element) element.style.display = "none";
-        });
-    }
+function hideAll() {
+    const screens = [".screen1", ".screen2", ".screen3", ".screen4", ".screen5", ".screen6"];
+    screens.forEach(selector => {
+        const element = document.querySelector(selector);
+        if (element) element.style.display = "none";
+    });
+}
 
+function toggle() {
     hideAll()
     if (document.querySelector(".screen1")) document.querySelector(".screen1").style.display = "block";
 
@@ -20,6 +20,9 @@ function toggle() {
     }
 }
 
-toggle()
+function changeScreen(screenName) {
+    hideAll()
+    if (document.querySelector(screenName)) document.querySelector(screenName).style.display = "block";
+}
 
-export { toggle };
+export { toggle, changeScreen };
