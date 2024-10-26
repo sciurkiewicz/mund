@@ -15,6 +15,18 @@ body {
     font-size: 24px;
 }
 
+.card {
+    background-color: brown;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+}
+
 /* screen 1 */
 /* this is main menu of game */
 
@@ -30,13 +42,6 @@ body {
     flex-direction: column;
 }
 
-.card {
-    background-color: brown;
-    padding: 12px;
-    border-radius: 12px;
-    text-align: center;
-}
-
 .screen1 .menu button {
     all: unset;
     display: inline-block;
@@ -49,7 +54,17 @@ body {
     color: white
 }
 
-.screen {
-    width: 100vw;
-    height: 100vh;
+
+/* screen 2 */
+/* stats screen */
+
+.screen2 button {
+    all: unset;
+    display: inline-block;
+    cursor: pointer; 
+    font-size: 24px;
+    transition-duration: 250ms;
+}
+.screen2 button:hover {
+    color: white
 }
