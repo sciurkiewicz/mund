@@ -26,15 +26,11 @@ body {
     width: 100vw;
     height: 100vh;
 }
-
-/* screen 1 */
-/* this is main menu of game */
-
 .screen1 {
     text-align: center;
 }
 
-.screen1 .menu {
+.menu {
     background-color: brown;
     padding: 12px;
     border-radius: 12px;
@@ -42,7 +38,7 @@ body {
     flex-direction: column;
 }
 
-.screen1 .menu button {
+.menu button {
     all: unset;
     display: inline-block;
     cursor: pointer; 
@@ -50,21 +46,6 @@ body {
     transition-duration: 250ms;
 }
 
-.screen1 .menu button:hover {
-    color: white
-}
-
-
-/* screen 2 */
-/* stats screen */
-
-.screen2 button {
-    all: unset;
-    display: inline-block;
-    cursor: pointer; 
-    font-size: 24px;
-    transition-duration: 250ms;
-}
-.screen2 button:hover {
+.menu button:hover {
     color: white
 }
