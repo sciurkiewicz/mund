@@ -1,5 +1,5 @@
 let hero = {
-    talents: 10,
+    talents: 0,
     strength: 5,
     perception: 5,
     dexterity: 5,
