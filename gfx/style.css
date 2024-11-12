@@ -87,3 +87,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.fight-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fight-hero, .fight-enemy {
+    margin: 16px;
+}
+.fight-options {
+    display: flex;
+}
