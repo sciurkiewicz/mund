@@ -15,7 +15,7 @@ body {
     font-size: 16px;
 }
 .stat {
-    display: flex
+    display: flex;
 }
 
 .screen {
@@ -95,8 +95,54 @@ body {
 }
 
 .fight-hero, .fight-enemy {
-    margin: 16px;
+    margin: 64px;
 }
 .fight-options {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.items-fight {
+    display: flex;
+    padding-top: 32px
+}
+.items-fight img {
+    margin: 16px;
+}
+
+meter {
+    all: unset;
+    display: block;
+    width: 100%;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+meter::-webkit-meter-bar {
+    background-color: rgb(10, 10, 10);
+    border-radius: 5px;
+}
+
+meter::-webkit-meter-optimum-value {
+    box-shadow: 0 5px 5px -5px #999 inset;
+    /* background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(126,0,0,1) 100%); */
+    background-size: 100% 100%;
+}
+
+meter::-webkit-meter-bar {
+    height: 16px;
+    background-image: none;
+    border-radius: 3px;
+}
+
+.meter-health::-webkit-meter-optimum-value {
+    background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(126,0,0,1) 100%);
+}
+.meter-energy::-webkit-meter-optimum-value {
+    background-image: linear-gradient(90deg, rgb(0, 255, 115) 0%, rgb(0, 109, 49) 100%);
 }
