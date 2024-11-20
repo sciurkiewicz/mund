@@ -3,5 +3,10 @@ const gameSound = () => {
       button.addEventListener('click', () => new Audio('./sfx/effects/click.mp3').play())
     );
   };
+
   
-  export { gameSound };
+  const hit = () => {
+        addEventListener('click', () => new Audio('./sfx/effects/hit.mp3').play())
+  }
+  
+  export { gameSound, hit };

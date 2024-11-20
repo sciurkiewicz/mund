@@ -1,4 +1,5 @@
 let hero = {
+    name: "Hero",
     talents: 0,
     strength: 5,
     perception: 5,
@@ -6,6 +7,8 @@ let hero = {
     intelligence: 5,
     wisdom: 5,
     charisma: 5,
+    health: 100,
+    energy: 100,
 }
 
 export { hero }
