@@ -47,7 +47,7 @@ function fight() {
             if (enemy.health > 0) {
                 enemy.health -= damageToEnemy;
                 if (enemy.health < 0) enemy.health = 0;
-                // hit()
+                hit()
             }
 
             // Aktualizacja statystyk bohatera i przeciwnika

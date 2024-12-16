@@ -6,7 +6,7 @@ const gameSound = () => {
 
   
   const hit = () => {
-        addEventListener('click', () => new Audio('./sfx/effects/hit.mp3').play())
+        new Audio('./sfx/effects/hit.mp3').play()
   }
   
   export { gameSound, hit };

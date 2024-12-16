@@ -65,7 +65,7 @@ body {
 }
 
 .map-background {
-    background-image: url('./images/menu/backgrounds/mapa.svg');
+    background-image: url('./images/menu/backgrounds/map/map.avif');
     width: 100%;
     height: 100%;
     background-size: cover;
